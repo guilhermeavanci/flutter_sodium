@@ -758,7 +758,7 @@ class Sodium {
       int subkeyLen, int subkeyId, Uint8List ctx, Uint8List key) {
     RangeError.checkValueInInterval(
         subkeyLen, cryptoKdfBytesMin, cryptoKdfBytesMax, 'subkeyLen');
-    RangeError.checkValueInInterval(subkeyId, 0, (2 ^ 64) - 1, 'subkeyId');
+    // RangeError.checkValueInInterval(subkeyId, 0, (2 ^ 64) - 1, 'subkeyId');
     RangeError.checkValueInInterval(ctx.length, cryptoKdfContextbytes,
         cryptoKdfContextbytes, 'ctx', 'Invalid length');
     RangeError.checkValueInInterval(key.length, cryptoKdfKeybytes,
